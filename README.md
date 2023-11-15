@@ -1,11 +1,7 @@
-# PlanningAI
-**G**oal **O**riented **A**ction **P**lanning C#/.NET Library 
+# Goal-Oriented Action Planning
+**G**oal **O**riented **A**ction **P**lanning in .NET 
 
-This library provides a basic implementation of GOAP with 
-a bit of a utility system thrown on top.
-
-[![Build Status](https://dev.azure.com/rubenwe/PlanningAI/_apis/build/status/rubenwe.PlanningAI)](https://dev.azure.com/rubenwe/PlanningAI/_build/latest?definitionId=1)
-[![nuget_version_badge](https://img.shields.io/nuget/v/PlanningAI.png)](https://www.nuget.org/packages/PlanningAI)
+This is a fork of the library at [rubenwe/PlanningAI](https://github.com/rubenwe/PlanningAI) which is not being maintained. My goals with this library are to modernize it and adapt it to work with Semantic Kernel.
 
 ## Basics
 Goal oriented action planning enables _agents_ to plan a _sequence of actions_ 
@@ -224,14 +220,3 @@ orderFood.BindTo(foodGoal);
 ## Dependencies
 The current implementation of `DomainState`depends on `System.Collections.Immutable.ImmutableDictionary<,>`.
 I'd like to drop this dependency further down the line for easier deployment and better performance.
-
-## Why use this implementation?
-There are (a lot of) other implementations of GOAP out there.
-Many of them will offer more features and better integration for certain use cases.
-This implementation provides a regressive planner, which I personally haven't found 
-in other .NET based solutions. 
-If you want or need to explore deep and wide, searching from the goal state
-can give a significant performance advantage.
-
-Send me a message if you know of other implementations that do it this way -
-I would love to take a look :)
